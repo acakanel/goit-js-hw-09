@@ -1,14 +1,3 @@
-document.querySelector('.feedback-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const email = event.target.elements.email.value;
-    const message = event.target.elements.message.value;
-    console.log('Email:', email);
-    console.log('Message:', message);
-    // Further processing or form submission
-});
-
-
-
 const form = document.querySelector('.feedback-form');
 const formInputEmail = document.querySelector('input[type="email"]');
 const formTextArea = document.querySelector('textarea');
@@ -44,5 +33,3 @@ form.addEventListener('submit', e => {
   localStorage.removeItem(localStorageKey);
   form.reset();
 });
-
-
